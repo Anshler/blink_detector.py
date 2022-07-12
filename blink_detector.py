@@ -117,9 +117,7 @@ def main():
 	camera = cv2.VideoCapture(0)
 	model = load_model('blinkModel.hdf5')
 	
-	# blinks is the number of total blinks ,close_counter
-	# the counter for consecutive close predictions
-	# and mem_counter the counter of the previous loop 
+	# blinks is the number of total blinks
 	blinks = 0
 	blinks_list=[]
 	state = ''
